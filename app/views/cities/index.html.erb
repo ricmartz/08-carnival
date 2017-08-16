@@ -1,0 +1,26 @@
+Cities
+<div>
+    <%= link to 'New City', new_city_path %>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Photo</th>
+                
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @cities.each do |c| %>
+            <tr>
+                <td><%= c.id %></tr>
+                <td><%= c.name %></tr>
+                <td><%= c.country %></tr>
+                <td><%= c.photo %></tr>
+    <% end %>
+        
+    </tbody>
+</table>
